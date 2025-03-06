@@ -2,6 +2,7 @@ import { useState } from "react";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
+import StoreIcon from '@mui/icons-material/Store';
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -19,6 +20,7 @@ function Header() {
                     <div className="m-2 p-4 gap-2 flex flex-col bg-white origin-top-right absolute
                         right-0 rounded-md shadow-md border border-gray-300" role="menu">
                         <Link to="/cart"><ShoppingCartIcon/> View cart (0)</Link>
+                        <Link to="/admin/purchases"><StoreIcon/> View purchases (admin)</Link>
                         <Link to="/"><LogoutIcon/> Log out</Link>
                     </div>
                 )} 
