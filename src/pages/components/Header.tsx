@@ -28,8 +28,8 @@ function Header() {
     else {
         headerRight = (
             <div className="gap-2 flex">
-                <button type="button" className="text-black px-4 py-2 font-bold outline rounded-full">Log in</button>
-                <button type="button" className="bg-black text-white px-4 py-2 rounded-full font-bold">Register</button>
+                <Link to="/login" className="text-black px-4 py-2 font-bold outline rounded-full">Log in</Link>
+                <Link to="/register" className="bg-black text-white px-4 py-2 rounded-full font-bold">Register</Link>
             </div>
         )
     }
