@@ -18,10 +18,10 @@ function Header() {
                 {dropdown && (
                     <div className="m-2 p-4 gap-2 flex flex-col bg-white origin-top-right absolute
                         right-0 rounded-md shadow-md border border-gray-300" role="menu">
-                        <Link to="/"><ShoppingCartIcon/> View cart (0)</Link>
+                        <Link to="/cart"><ShoppingCartIcon/> View cart (0)</Link>
                         <Link to="/"><LogoutIcon/> Log out</Link>
                     </div>
-                )}
+                )} 
             </div>
         )
     }

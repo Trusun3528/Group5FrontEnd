@@ -28,7 +28,14 @@ function ItemDetailsPage() {
                         <hr className="text-gray-200 my-2"/>
                         <span>This is an item description.</span>
                     </div>
-                    <Link to="/" className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><ShoppingCartIcon/></Link>
+                    <form className="flex flex-col gap-3 w-[100px]">
+                        <div>
+                            <label>Quantity:</label>
+                            <input type="number" placeholder="1" required />
+                        </div>
+                        <button type="submit" className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><ShoppingCartIcon/></button>
+                    </form>
+                    
                 </div>
             </div>
         </div>
