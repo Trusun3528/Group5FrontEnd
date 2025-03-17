@@ -1,18 +1,28 @@
-import Header from "./components/Header";
+import { useEffect, useState } from "react";
 import StoreItem from "./components/StoreItem";
+import PageContainer from "./components/PageContainer";
 
-function LandingPage() {
+function HomePage() {
+  const [items, setItems] = useState<any>(null);
+
+  useEffect(() => {
+    (async () => {
+      const response = await fetch("/api/Product/GetProducts")
+      setItems((await response.json()).$values)
+    })()
+  }, [])
+
+  const isLoading = items == null
+
   return (
-    <div>
-      <Header />
-      <div className="m-4 flex gap-2">
-        <StoreItem />
-        <StoreItem />
-        <StoreItem />
-        <StoreItem />
-      </div>
-    </div>
+    <PageContainer
+      isLoading={isLoading}
+      content={isLoading ? null :
+      <div className="flex gap-2">
+        {items.map((item: any) => <StoreItem key={item.id} item={item}></StoreItem>)}
+      </div>}>
+    </PageContainer>
   )
 }
 
-export default LandingPage;
+export default HomePage;

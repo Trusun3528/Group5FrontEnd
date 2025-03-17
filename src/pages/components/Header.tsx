@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function Header() {
     const [dropdown, setDropdown] = useState(false);
 
-    const loggedIn = true;
+    const loggedIn = false;
 
     let headerRight;
     
@@ -39,7 +39,7 @@ function Header() {
     return (
         <header className="w-full h-[65px] shadow items-center flex justify-between p-4">
             <div>
-                <Link to="/">Store logo</Link>
+                <Link to="/">The Useless Store</Link>
             </div>
             {headerRight}
         </header>
