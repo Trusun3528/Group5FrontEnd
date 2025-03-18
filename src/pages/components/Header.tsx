@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
+import PersonIcon from '@mui/icons-material/Person';
 import StoreIcon from '@mui/icons-material/Store';
 import { Link } from "react-router-dom";
 
@@ -21,8 +22,9 @@ function Header() {
                 {dropdown && (
                     <div className="m-2 p-4 gap-2 flex flex-col bg-white origin-top-right absolute
                         right-0 rounded-md shadow-md border border-gray-300" role="menu">
-                        <Link to="/cart"><ShoppingCartIcon/> View cart (0)</Link>
                         <Link to="/admin/purchases"><StoreIcon/> View purchases (admin)</Link>
+                        <Link to="/cart"><ShoppingCartIcon/> View cart (0)</Link>
+                        <Link to="/profile"><PersonIcon/> View profile</Link>
                         <Link to="/" onClick={() => {
                             localStorage.removeItem('access-token')
                         }}><LogoutIcon/> Log out</Link>
