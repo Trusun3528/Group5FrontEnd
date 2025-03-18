@@ -23,9 +23,8 @@ function Header() {
                         right-0 rounded-md shadow-md border border-gray-300" role="menu">
                         <Link to="/cart"><ShoppingCartIcon/> View cart (0)</Link>
                         <Link to="/admin/purchases"><StoreIcon/> View purchases (admin)</Link>
-                        <Link to="#" onClick={() => {
+                        <Link to="/" onClick={() => {
                             localStorage.removeItem('access-token')
-                            navigate('/')
                         }}><LogoutIcon/> Log out</Link>
                     </div>
                 )} 
