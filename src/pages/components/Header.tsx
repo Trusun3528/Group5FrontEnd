@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -7,8 +8,9 @@ import { Link } from "react-router-dom";
 
 function Header() {
     const [dropdown, setDropdown] = useState(false);
+    const navigate = useNavigate();
 
-    const loggedIn = false;
+    const loggedIn = localStorage.getItem('access-token') != null;
 
     let headerRight;
     
@@ -21,7 +23,10 @@ function Header() {
                         right-0 rounded-md shadow-md border border-gray-300" role="menu">
                         <Link to="/cart"><ShoppingCartIcon/> View cart (0)</Link>
                         <Link to="/admin/purchases"><StoreIcon/> View purchases (admin)</Link>
-                        <Link to="/"><LogoutIcon/> Log out</Link>
+                        <Link to="#" onClick={() => {
+                            localStorage.removeItem('access-token')
+                            navigate('/')
+                        }}><LogoutIcon/> Log out</Link>
                     </div>
                 )} 
             </div>

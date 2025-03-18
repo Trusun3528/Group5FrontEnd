@@ -7,8 +7,8 @@ function HomePage() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch("/api/Product/GetProducts")
-      setItems((await response.json()).$values)
+      const response = await fetch("/api/Product/GetProducts");
+      setItems((await response.json()).$values);
     })()
   }, [])
 
