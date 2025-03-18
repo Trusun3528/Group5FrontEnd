@@ -26,7 +26,7 @@ function LoginPage() {
     });
 
     if (response.status == 200) {
-      localStorage.setItem('access-token', '');
+      localStorage.setItem('access-token', (await response.json()).token);
       navigate('/');
     }
     else {
