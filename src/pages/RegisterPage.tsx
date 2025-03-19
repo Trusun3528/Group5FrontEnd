@@ -27,7 +27,6 @@ function RegisterPage() {
     });
 
     if (response.status == 200) {
-      localStorage.setItem('access-token', '');
       navigate('/');
     }
     else {
