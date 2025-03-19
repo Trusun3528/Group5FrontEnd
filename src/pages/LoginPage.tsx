@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginInput, LoginSubmit, LoginError } from "./components/LoginComponents";
 import PageContainer from "./components/PageContainer";
+import { logIn } from "../auth";
 
 function LoginPage() {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ function LoginPage() {
     });
 
     if (response.status == 200) {
-      localStorage.setItem('access-token', (await response.json()).token);
+      logIn((await response.json()).token);
       navigate('/');
     }
     else {

@@ -5,12 +5,13 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import StoreIcon from '@mui/icons-material/Store';
 import { Link } from "react-router-dom";
+import { isLoggedIn, logOut } from "../../auth";
 
 function Header() {
     const [dropdown, setDropdown] = useState(false);
     const navigate = useNavigate();
 
-    const loggedIn = localStorage.getItem('access-token') != null;
+    const loggedIn = isLoggedIn();
 
     let headerRight;
     
@@ -24,7 +25,8 @@ function Header() {
                         <Link to="/cart"><ShoppingCartIcon/> View cart (0)</Link>
                         <Link to="/admin/purchases"><StoreIcon/> View purchases (admin)</Link>
                         <Link to="/" onClick={() => {
-                            localStorage.removeItem('access-token')
+                            logOut();
+                            navigate('/');
                         }}><LogoutIcon/> Log out</Link>
                     </div>
                 )} 

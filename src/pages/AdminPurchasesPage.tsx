@@ -1,6 +1,5 @@
 import AdminPurchase from "./components/AdminPurchase";
 import Header from "./components/Header";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function AdminPurchasesPage() {
   return (
