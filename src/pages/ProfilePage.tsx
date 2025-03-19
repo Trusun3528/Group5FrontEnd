@@ -7,8 +7,7 @@ function ProfilePage() {
     useEffect(() => {
     (async () => {
         const response = await fetch(`/api/Account/GetUser/1`, {
-            method: 'GET',
-            headers: 
+            method: 'GET'
         })
         console.log(response)
     })()
