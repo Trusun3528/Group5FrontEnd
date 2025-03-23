@@ -4,6 +4,7 @@ import "./index.css"
 import HomePage from "./pages/HomePage";
 import ItemDetailsPage from "./pages/ItemDetailsPage";
 import CartPage from "./pages/CartPage";
+import ThankYouPage from "./pages/ThankYouPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 // Admin Pages
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="register" element={<RegisterPage />} />
         <Route path="details/:id" element={<ItemDetailsPage />} />
         <Route path="cart" element={<CartPage />} />
+        <Route path="thankyou" element={<ThankYouPage />} />
         
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="admin/purchases" element={<AdminPurchasesPage />} />

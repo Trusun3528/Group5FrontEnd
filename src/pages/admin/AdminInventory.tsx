@@ -12,6 +12,7 @@ function AdminInventory() {
 
   const [newItem, setNewItem] = useState({ name: "", quantity: 0 });
 
+ // For testing, does not persist
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setNewItem({ ...newItem, [e.target.name]: e.target.value });
   };
@@ -25,7 +26,6 @@ function AdminInventory() {
 
   return (
     <div>
-      <Header />
       <PageContainer
         isLoading={false}
         content={
