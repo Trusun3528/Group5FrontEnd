@@ -1,5 +1,5 @@
-import AdminPurchase from "./components/AdminPurchase";
-import Header from "./components/Header";
+import AdminPurchase from "../components/AdminPurchase";
+import Header from "../components/Header";
 
 function AdminPurchasesPage() {
   return (

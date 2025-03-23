@@ -6,7 +6,7 @@ import ItemDetailsPage from "./pages/ItemDetailsPage";
 import CartPage from "./pages/CartPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import AdminPurchasesPage from "./pages/AdminPurchasesPage";
+import AdminPurchasesPage from "./pages/admin/AdminPurchasesPage";
 
 export default function App() {
   return (
