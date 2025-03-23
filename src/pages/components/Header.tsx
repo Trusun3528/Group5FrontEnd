@@ -15,17 +15,14 @@ function Header() {
   return (
     <header className="w-full h-[65px] shadow items-center flex justify-between p-4">
       <div>
-        <Link to="/">The Useless Store</Link>
+        <Link to="/">The Impossible Store</Link>
       </div>
 
       <div className="flex gap-4">
         {/*Admin Panel Button for Testing (Always Visible*/}
         <button 
           onClick={() => navigate("/admin")} 
-          className="bg-red-500 text-white px-4 py-2 rounded-full font-bold"
-        >
-          Admin Panel
-        </button>
+          className="bg-red-500 text-white px-4 py-2 rounded-full font-bold">Admin Panel</button>
 
         {loggedIn ? (
           <div>
