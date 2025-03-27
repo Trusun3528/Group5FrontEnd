@@ -23,7 +23,7 @@ function HomePage() {
         isLoading={isLoading}
         content={
           isLoading ? null : (
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {items.map((item: any) => (
                 <StoreItem key={item.id} item={item} />
               ))}
