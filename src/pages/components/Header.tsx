@@ -18,7 +18,7 @@ function Header() {
         <Link to="/">The Impossible Store</Link>
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center">
         {/*Admin Panel Button for Testing (Always Visible*/}
         <button 
           onClick={() => navigate("/admin")} 

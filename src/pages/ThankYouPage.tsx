@@ -25,7 +25,7 @@ function ThankYouPage() {
 
           <div className="flex justify-between">
             <span>Item: Underwater BBQ</span>
-            <span>$49.00.00</span>
+            <span>$49.00</span>
           </div>
 
         </div>
