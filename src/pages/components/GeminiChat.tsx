@@ -20,7 +20,7 @@ function GeminiChat() {
     ]);
 
     try {
-      const response = await fetch("http://localhost:5251/Gemini/Chat", {
+      const response = await fetch("/api/Gemini/Chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: userPrompt })
