@@ -1,24 +1,33 @@
-import Header from "./components/Header";
+import { useEffect, useState } from "react";
+import PageContainer from "./components/PageContainer";
+import { getAuthHeaders } from "../auth";
 import CartItem from "./components/CartItem";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function CartPage() {
-  return (
-    <div>
-        <Header />
+  const [cartItems, setCartItems] = useState<any>(null);
+  
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(`api/Cart/GetCartItems/${1}`, {
+          method: 'GET',
+          headers: getAuthHeaders()
+        }
+      );
+      
+      setCartItems((await response.json()).$values);
+    })()
+  }, [])
 
-        <div className="w-fit m-auto mt-4">
-            <h1 className="text-xl mb-4 font-bold">Your cart (0)</h1>
-            <div className="flex flex-col gap-2 w-[400px]">
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-            </div>
-            <button type="button" className="bg-black text-white px-4 py-2 rounded-full font-bold mt-4"><ShoppingCartIcon/> Checkout</button>
-        </div>
-        
-    </div>
+  const isLoading = cartItems == null
+
+  return (
+    <PageContainer
+      isLoading={isLoading}
+      content={isLoading ? null :
+      <div className="flex gap-2">
+        {cartItems.map((cartItem) => <CartItem name="test" price={1} quantity={1} />)}
+      </div>}>
+    </PageContainer>
   )
 }
 
