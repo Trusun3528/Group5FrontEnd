@@ -21,7 +21,7 @@ export default function App() {
         <Route path="register" element={<RegisterPage />} />
         <Route path="details/:id" element={<ItemDetailsPage />} />
         <Route path="cart" element={<CartPage />} />
-        <Route path="thankyou" element={<ThankYouPage />} />
+        <Route path="thank-you" element={<ThankYouPage />} />
         
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="admin/purchases" element={<AdminPurchasesPage />} />

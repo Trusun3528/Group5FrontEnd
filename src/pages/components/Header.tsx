@@ -5,6 +5,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import MenuIcon from "@mui/icons-material/Menu";
 import StoreIcon from "@mui/icons-material/Store";
 import { isLoggedIn, logOut } from "../../auth";
+import HeaderLogo from "../../images/HeaderLogo.jpg";
 
 function Header() {
   const [dropdown, setDropdown] = useState(false);
@@ -15,7 +16,9 @@ function Header() {
   return (
     <header className="w-full h-[65px] shadow items-center flex justify-between p-4">
       <div>
-        <Link to="/">The Impossible Store</Link>
+        <Link to="/">
+        <img src={HeaderLogo} alt="The Impossible Store" className="h-15" />
+        </Link>
       </div>
 
       <div className="flex gap-4 items-center">
