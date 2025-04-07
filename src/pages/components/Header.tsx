@@ -7,7 +7,13 @@ import StoreIcon from "@mui/icons-material/Store";
 import { isLoggedIn, logOut } from "../../auth";
 import HeaderLogo from "../../images/HeaderLogo.jpg";
 
-function Header() {
+// this handles clearing the search feature if the user tries to go home
+// after searching something
+type HeaderProps = {
+  onLogoClick: () => void;
+};
+
+function Header({ onLogoClick }: HeaderProps) {
   const [dropdown, setDropdown] = useState(false);
   const navigate = useNavigate();
 
@@ -16,13 +22,13 @@ function Header() {
   return (
     <header className="w-full h-[65px] shadow items-center flex justify-between p-4">
       <div>
-        <Link to="/">
-        <img src={HeaderLogo} alt="The Impossible Store" className="h-15" />
+        <Link to="/" onClick={onLogoClick}>
+          <img src={HeaderLogo} alt="The Impossible Store" className="h-15" />
         </Link>
       </div>
 
       <div className="flex gap-4 items-center">
-        {/*Admin Panel Button for Testing (Always Visible*/}
+        {/* Admin Panel Button for Testing (Always Visible) */}
         <button 
           onClick={() => navigate("/admin")} 
           className="bg-red-500 text-white px-4 py-2 rounded-full font-bold">Admin Panel</button>
