@@ -1,6 +1,27 @@
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
-// Hardcoded for testing
+import { getAuthHeaders } from "../auth";
+
 function ThankYouPage() {
+  const [cart, setCart] = useState<any>(null);
+
+  useEffect(() => {
+    (async () => {
+      const response = await fetch("/api/Cart/GetCarts", {
+        method: 'GET',
+        headers: getAuthHeaders(),
+      });
+
+      const data = await response.json();
+      setCart(data[0]); // Assuming the user has only one cart, take the first one.
+    })();
+  }, []);
+
+  const isLoading = cart == null;
+
+  // Calculate the total if cart and cart items are loaded
+  const total = cart ? cart.TotalAmount : 0;
+
   return (
     <div>
       <Header />
@@ -13,25 +34,21 @@ function ThankYouPage() {
         </div>
 
         <div className="space-y-4">
-          <div className="flex justify-between">
-            <span>Item: Left Handed Screwdriver</span>
-            <span>$5.00</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>Item: Waterproof Towel</span>
-            <span>$10.00</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>Item: Underwater BBQ</span>
-            <span>$49.00.00</span>
-          </div>
-
+          {isLoading ? (
+            <p>Loading cart...</p>
+          ) : (
+            cart.CartItems?.map((item: any) => (
+              <div className="flex justify-between" key={item.id}>
+                <span>{item.Product.name}</span>
+                <span>{item.Quantity} x ${item.Price.toFixed(2)}</span>
+                <span>${(item.Quantity * item.Price).toFixed(2)}</span>
+              </div>
+            ))
+          )}
         </div>
 
         <div className="border-t pt-4 mt-4 text-lg font-bold">
-          Total: $64.00
+          Total: ${total.toFixed(2)}
         </div>
       </div>
     </div>
