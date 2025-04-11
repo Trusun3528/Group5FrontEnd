@@ -7,14 +7,19 @@ import SearchBar from "./components/SearchBar";
 import ClipLoader from "react-spinners/ClipLoader";
 
 function HomePage() {
-  const [items, setItems] = useState<any[]>([]);
+    const [items, setItems] = useState<any[]>([]);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     (async () => {
       const response = await fetch("/api/Product/GetProducts");
       const data = await response.json();
       setItems(data.$values || []);
-    })();
+      })();
+
+      // Check login status
+      const user = sessionStorage.getItem("employee");
+      setIsLoggedIn(!!user);
   }, []);
 
   const isLoading = items.length === 0;
@@ -65,12 +70,22 @@ function HomePage() {
       <PageContainer
         isLoading={isLoading}
         onLogoClick={handleLogoClick}
+
         content={
           isLoading ? (
             <ClipLoader />
           ) : (
             <>
-              <SearchBar onSearch={handleSearch} onClear={handleClear} />
+               <SearchBar onSearch={handleSearch} onClear={handleClear} />
+               {!isLoggedIn && (
+                  <div className="bg-yellow-100 border border-yellow-200 p-4 rounded-xl mb-4">
+                     <p className="text-yellow-700">
+                         You are browsing as a guest.{" "}
+                        <a href="/login" className="underline text-blue-600">Login</a> or{" "}
+                        <a href="/register" className="underline text-blue-600">Register</a> to unlock more features like discounts at checkout.
+                     </p>
+                  </div>
+               )}
               <div className="flex flex-wrap gap-2">
                 {items.map((item: any) => (
                   <StoreItem key={item.id} item={item} />
