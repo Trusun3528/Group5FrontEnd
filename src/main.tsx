@@ -11,6 +11,9 @@ import RegisterPage from "./pages/RegisterPage";
 import AdminPurchasesPage from "./pages/admin/AdminPurchasesPage";
 import AdminPanel from "./pages/admin/AdminPanel";
 import AdminInventory from "./pages/admin/AdminInventory";
+// business pages
+import Privacy from "./pages/business/Privacy";
+import TermsOfService from "./pages/business/TermsOfService";
 
 export default function App() {
   return (
@@ -26,6 +29,9 @@ export default function App() {
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="admin/purchases" element={<AdminPurchasesPage />} />
         <Route path="/admin/inventory" element={<AdminInventory />} />
+
+        <Route path="/business/privacy" element={<Privacy />} />
+        <Route path="/business/TOS" element={<TermsOfService />} />
 
       </Routes>
     </BrowserRouter>
