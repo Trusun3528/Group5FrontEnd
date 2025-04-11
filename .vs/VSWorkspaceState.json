@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\pages",
+    "\\src\\pages\\admin",
+    "\\src\\pages\\business",
+    "\\src\\pages\\components"
   ],
-  "SelectedNode": "\\C:\\Users\\Coolio\\Desktop\\Open Source Web\\Frontend\\Group5FrontEnd",
+  "SelectedNode": "\\src\\pages\\components\\Footer.tsx",
   "PreviewInSolutionExplorer": false
 }
