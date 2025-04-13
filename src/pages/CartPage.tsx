@@ -48,9 +48,8 @@ function CartPage() {
         cart.$values.map((cartItem: any) => (<CartItem
             key={cartItem.id}
             id={cartItem.id}
-            name={cartItem.product.productName}
             quantity={cartItem.quantity}
-            price={cartItem.product.price * cartItem.quantity}
+            product={cartItem.product}
             removeItemCallback={removeItemCallback} />))}
       </div>
     }></PageContainer>

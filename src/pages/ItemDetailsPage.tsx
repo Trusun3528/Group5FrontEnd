@@ -9,15 +9,15 @@ function ItemDetailsPage() {
     const [item, setItem] = useState<any>(null);
     const [quantity, setQuantity] = useState(1);
     const { id } = useParams();
+    const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
         (async () => {
             const response = await fetch(`/api/Product/GetProducts/${id}`);
             setItem(await response.json());
+            setIsLoading(false);
         })();
     }, [id]);
-
-    const isLoading = item == null;
 
     const handleAddToCart = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -25,6 +25,8 @@ function ItemDetailsPage() {
     if (!item) return;
 
     try {
+        setIsLoading(true);
+
         const response = await fetch(`/api/UserCart/AddItem`, {
             method: "POST",
             headers: getAuthHeaders(),
@@ -35,9 +37,11 @@ function ItemDetailsPage() {
         });
 
         if (!response.ok) {
+            setIsLoading(false);
             throw new Error(`Failed to add to cart.`);
         }
 
+        setIsLoading(false);
         alert("Item added to cart!");
     } catch (error) {
         console.error("Error adding item to cart:", error);

@@ -45,7 +45,7 @@ function Header({ onLogoClick }: HeaderProps) {
                 role="menu"
               >
                 <Link to="/cart">
-                  <ShoppingCartIcon /> View cart (0)
+                  <ShoppingCartIcon /> View cart
                 </Link>
                 <Link to="/admin/purchases">
                   <StoreIcon /> View purchases (admin)
