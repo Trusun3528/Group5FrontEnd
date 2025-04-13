@@ -7,83 +7,54 @@ import CartItem from "./components/CartItem";
 
 function CartPage() {
   const [cart, setCart] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-  // HARDCODED FOR TESTING
-  // When changing to dynamic,we can either pull user ID from auth state, localStorage/sessionStorage,
-  //  or a backend GET /auth/me-style endpoint using JWT
-  const userId = 2; // Replace this with dynamic logic when using auth
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const navigate = useNavigate();
+
+  const fetchUserCart = async () => {
+    try {
+      const cartRes = await fetch(
+        `/api/UserCart/GetCart`, {
+          headers: getAuthHeaders()
+        });
+      if (!cartRes.ok) throw new Error("Failed to fetch cart");
+
+      const cartData = await cartRes.json();
+      setCart(cartData);
+      setIsLoading(false);
+    } catch (err) {
+      console.error("Error fetching user cart:", err);
+    }
+  };
 
   useEffect(() => {
-    const fetchUserCart = async () => {
-      try {
-        const userRes = await fetch(`http://localhost:5251/Account/GetUser/${userId}`);
-        if (!userRes.ok) throw new Error("Failed to fetch user");
-
-        const userData = await userRes.json();
-        const cartList = userData?.carts?.$values;
-        if (!cartList || cartList.length === 0) {
-          throw new Error("No cart found for this user");
-        }
-
-        const cartId = cartList[0].id;
-
-        const cartRes = await fetch(`http://localhost:5251/Cart/GetCart/${cartId}`);
-        if (!cartRes.ok) throw new Error("Failed to fetch cart");
-
-        const cartData = await cartRes.json();
-        setCart(cartData);
-      } catch (err) {
-        console.error("Error fetching user cart:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchUserCart();
   }, []);
 
-  if (loading) return <p className="p-4">Loading cart...</p>;
-  if (!cart) return <p className="p-4">Cart not found.</p>;
+  const removeItemCallback = async (itemId: number) => {
+    setIsLoading(true);
 
-  const cartItems = cart.cartItems?.$values || [];
+    await fetch(`/api/UserCart/RemoveItem/${itemId}`, {
+        method: "DELETE",
+        headers: getAuthHeaders()
+    });
+
+    fetchUserCart();
+  }
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Your Cart</h1>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <div className="space-y-4">
-          {cartItems.map((item: any) => (
-            <div
-              key={item.id}
-              className="flex items-center justify-between bg-white rounded-lg p-4 shadow"
-            >
-              <div className="flex items-center gap-4">
-                <img
-                  src={item.product?.imageURL}
-                  alt={item.product?.productName}
-                  className="w-24 h-24 object-cover rounded-lg border"
-                />
-                <div>
-                  <h2 className="text-xl font-semibold">
-                    {item.product?.productName}
-                  </h2>
-                  <p className="text-gray-600">
-                    {item.product?.productDescription}
-                  </p>
-                  <p className="text-sm text-gray-500">Quantity: {item.quantity}</p>
-                </div>
-              </div>
-              <div className="text-right">
-                <p className="text-lg font-bold">${item.price.toFixed(2)}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+    <PageContainer isLoading={isLoading} content={isLoading ? null :
+      <div>
+        {cart.$values.length == 0 ? "Cart is empty." : 
+        cart.$values.map((cartItem: any) => (<CartItem
+            key={cartItem.id}
+            id={cartItem.id}
+            name={cartItem.product.productName}
+            quantity={cartItem.quantity}
+            price={cartItem.product.price * cartItem.quantity}
+            removeItemCallback={removeItemCallback} />))}
+      </div>
+    }></PageContainer>
+  )
 }
 
 export default CartPage;

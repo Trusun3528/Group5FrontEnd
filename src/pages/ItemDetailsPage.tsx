@@ -25,41 +25,17 @@ function ItemDetailsPage() {
     if (!item) return;
 
     try {
-        const userId = 2; // TODO: Replace with dynamic user ID from auth
-
-        const userResponse = await fetch(`/api/Account/GetUser/${userId}`, {
-            method: "GET",
-            headers: getAuthHeaders(),
-        });
-
-        if (!userResponse.ok) {
-            throw new Error(`Failed to fetch user: ${await userResponse.text()}`);
-        }
-
-        const userData = await userResponse.json();
-        const cartId = userData.carts?.$values?.[0]?.id;
-
-        if (!cartId) {
-            throw new Error("No cart found for this user.");
-        }
-
-        const cartItem = {
-            cartID: cartId,
-            productID: item.id,
-            quantity: quantity,
-        };
-
-        const response = await fetch("/api/Cart/AddCartItem", {
+        const response = await fetch(`/api/UserCart/AddItem`, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                ...getAuthHeaders(),
-            },
-            body: JSON.stringify(cartItem),
+            headers: getAuthHeaders(),
+            body: JSON.stringify({
+                productId: id,
+                quantity: quantity
+            })
         });
 
         if (!response.ok) {
-            throw new Error(`Failed to add item: ${await response.text()}`);
+            throw new Error(`Failed to add to cart.`);
         }
 
         alert("Item added to cart!");

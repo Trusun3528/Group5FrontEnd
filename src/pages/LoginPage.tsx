@@ -27,7 +27,7 @@ function LoginPage() {
     });
 
     if (response.status == 200) {
-      logIn((await response.json()).token);
+      logIn((await response.json()).accessToken);
       navigate('/');
     }
     else {

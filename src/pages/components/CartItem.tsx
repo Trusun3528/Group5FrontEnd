@@ -10,8 +10,9 @@ function CartItem(props: any) {
                 <p>${props.price}</p>
             </div>
             <div className="flex flex-row gap-2">
-                <Link to="/details" className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><EditIcon/></Link>
-                <Link to="/cart" className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><DeleteIcon/></Link>
+                <Link to={`/details/${props.id}`} className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><EditIcon/></Link>
+                <button type="button" onClick={() => { props.removeItemCallback(props.id); }}
+                    className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><DeleteIcon/></button>
             </div>
         </div>
     )
