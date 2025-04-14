@@ -72,9 +72,7 @@ function HomePage() {
         onLogoClick={handleLogoClick}
 
         content={
-          isLoading ? (
-            <ClipLoader />
-          ) : (
+          isLoading ? null : (
             <>
                <SearchBar onSearch={handleSearch} onClear={handleClear} />
                {!isLoggedIn && (

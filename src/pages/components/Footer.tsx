@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -10,12 +11,12 @@ const Footer: React.FC = () => {
           &copy; {year} The Impossible Store. All rights reserved.
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="/privacy" className="text-sm hover:underline">
+          <Link to="business/privacy" className="text-sm hover:underline">
             Privacy Policy
-          </a>
-          <a href="/terms" className="text-sm hover:underline">
+          </Link>
+          <Link to="business/TOS" className="text-sm hover:underline">
             Terms of Service
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

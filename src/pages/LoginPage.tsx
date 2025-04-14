@@ -17,17 +17,17 @@ function LoginPage() {
   const submitForm = async (formData: any) => {
     setIsLoading(true);
 
-    const response = await fetch('/api/Account/SignInAccount', {
+    const response = await fetch('/api/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        Email: formData.email,
-        Password: formData.password
+        email: formData.email,
+        password: formData.password
       })
     });
 
     if (response.status == 200) {
-      logIn((await response.json()).token);
+      logIn((await response.json()).accessToken);
       navigate('/');
     }
     else {

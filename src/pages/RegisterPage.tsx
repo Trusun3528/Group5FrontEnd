@@ -10,19 +10,19 @@ function RegisterPage() {
   });
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string>("");
+  const [errors, setErrors] = useState<string[]>([]);
   const navigate = useNavigate();
 
   const submitForm = async (formData: any) => {
     setIsLoading(true);
 
-    const response = await fetch('/api/Account/CreateAccount', {
+    const response = await fetch('/api/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        Username: formData.username,
-        Email: formData.email,
-        Password: formData.password
+        username: formData.username,
+        email: formData.email,
+        password: formData.password
       })
     });
 
@@ -30,7 +30,14 @@ function RegisterPage() {
       navigate('/');
     }
     else {
-      setError('Failed to register.');
+      const responseJson = await response.json();
+      const errors = [];
+
+      for (const error of Object.values<string>(responseJson.errors)) {
+        errors.push(error[0]);
+      }
+
+      setErrors(errors);
     }
 
     setIsLoading(false);
@@ -39,7 +46,7 @@ function RegisterPage() {
   return (
     <PageContainer isLoading={isLoading} content={
       <form onSubmit={() => submitForm(formData)} className="flex flex-col gap-2">
-        <LoginError>{error}</LoginError>
+        {errors.map((error) => <LoginError>{error}</LoginError>)}
         <LoginInput formData={formData} setFormData={setFormData} name="username" type="text" text="Username" />
         <LoginInput formData={formData} setFormData={setFormData} name="email" type="email" text="Email" />
         <LoginInput formData={formData} setFormData={setFormData} name="password" type="password" text="Password" />
