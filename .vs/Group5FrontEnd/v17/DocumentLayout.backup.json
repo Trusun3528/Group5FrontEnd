@@ -1,0 +1,479 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\Header.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\components\\Header.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\RegisterPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\RegisterPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\services\\userService.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\services\\userService.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\auth.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\auth.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\HomePage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\HomePage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\CartPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\CartPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\CartItem.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\components\\CartItem.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ItemDetailsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\ItemDetailsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\GeminiChat.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\components\\GeminiChat.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\PageContainer.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\components\\PageContainer.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\StoreItem.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\components\\StoreItem.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminInventory.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\admin\\AdminInventory.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminPanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\admin\\AdminPanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminPurchasesPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\admin\\AdminPurchasesPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\AdminPurchase.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\components\\AdminPurchase.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\LoginComponents.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\components\\LoginComponents.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\LoginPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\LoginPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ProfilePage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\ProfilePage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ThankYouPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\ThankYouPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\UserPreferencesPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\UserPreferencesPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\App.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 199,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomePage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\HomePage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\HomePage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\HomePage.tsx",
+              "RelativeToolTip": "src\\pages\\HomePage.tsx",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:20:09.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Header.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\Header.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\components\\Header.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\Header.tsx",
+              "RelativeToolTip": "src\\pages\\components\\Header.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T19:02:20.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartItem.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\CartItem.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\components\\CartItem.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\CartItem.tsx",
+              "RelativeToolTip": "src\\pages\\components\\CartItem.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-28T19:39:01.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ItemDetailsPage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ItemDetailsPage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\ItemDetailsPage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ItemDetailsPage.tsx",
+              "RelativeToolTip": "src\\pages\\ItemDetailsPage.tsx",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwDYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:17:04.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminPanel.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminPanel.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\admin\\AdminPanel.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminPanel.tsx",
+              "RelativeToolTip": "src\\pages\\admin\\AdminPanel.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:17:14.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminInventory.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminInventory.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\admin\\AdminInventory.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminInventory.tsx",
+              "RelativeToolTip": "src\\pages\\admin\\AdminInventory.tsx",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:17:06.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "userService.ts",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\services\\userService.ts",
+              "RelativeDocumentMoniker": "src\\services\\userService.ts",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\services\\userService.ts",
+              "RelativeToolTip": "src\\services\\userService.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:16:40.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartPage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\CartPage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\CartPage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\CartPage.tsx",
+              "RelativeToolTip": "src\\pages\\CartPage.tsx",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:18:58.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PageContainer.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\PageContainer.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\components\\PageContainer.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\PageContainer.tsx",
+              "RelativeToolTip": "src\\pages\\components\\PageContainer.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-28T19:38:47.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "auth.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\auth.tsx",
+              "RelativeDocumentMoniker": "src\\auth.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\auth.tsx",
+              "RelativeToolTip": "src\\auth.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:16:27.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterPage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\RegisterPage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\RegisterPage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\RegisterPage.tsx",
+              "RelativeToolTip": "src\\pages\\RegisterPage.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:17:02.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GeminiChat.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\GeminiChat.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\components\\GeminiChat.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\GeminiChat.tsx",
+              "RelativeToolTip": "src\\pages\\components\\GeminiChat.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-28T19:39:00.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminPurchasesPage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminPurchasesPage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\admin\\AdminPurchasesPage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\admin\\AdminPurchasesPage.tsx",
+              "RelativeToolTip": "src\\pages\\admin\\AdminPurchasesPage.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:12:58.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StoreItem.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\StoreItem.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\components\\StoreItem.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\StoreItem.tsx",
+              "RelativeToolTip": "src\\pages\\components\\StoreItem.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-28T19:38:37.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminPurchase.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\AdminPurchase.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\components\\AdminPurchase.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\AdminPurchase.tsx",
+              "RelativeToolTip": "src\\pages\\components\\AdminPurchase.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-28T19:39:03.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProfilePage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ProfilePage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\ProfilePage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ProfilePage.tsx",
+              "RelativeToolTip": "src\\pages\\ProfilePage.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:17:02.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserPreferencesPage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\UserPreferencesPage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\UserPreferencesPage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\UserPreferencesPage.tsx",
+              "RelativeToolTip": "src\\pages\\UserPreferencesPage.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:16:42.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginComponents.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\LoginComponents.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\components\\LoginComponents.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\components\\LoginComponents.tsx",
+              "RelativeToolTip": "src\\pages\\components\\LoginComponents.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:26:51.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ThankYouPage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ThankYouPage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\ThankYouPage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\ThankYouPage.tsx",
+              "RelativeToolTip": "src\\pages\\ThankYouPage.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:16:55.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginPage.tsx",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\LoginPage.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\LoginPage.tsx",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\pages\\LoginPage.tsx",
+              "RelativeToolTip": "src\\pages\\LoginPage.tsx",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-27T18:17:03.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "vite.svg",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\public\\vite.svg",
+              "RelativeDocumentMoniker": "public\\vite.svg",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\public\\vite.svg",
+              "RelativeToolTip": "public\\vite.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVDhPjZNLSFRhFMd/3507M/dKPsacsYelWGZZFFJRkdSmNrUoatMiKggSN2YFEUX3MvQiiBYWtFAyggoXPSGyhQuhFrXQFr7GMFOowcZMUO9MM3pPi9Eao6gf/Bcfh3PO/5yPo8jAsqxI5vtvKKXuhMPhK4jInIBlWRH5Bw0NDYOWZUVs264B0DILKEUXCCIpZOIi7uetpHpCxN8GiffU4rrThEIhXzgcXiEidbZtH/5ZQKTV\u002B72oItjSYfG5vxwneoX2/iW80dvxb4ji9D4BIBAIeBsbG4fSOXJWzSR7qpt9D\u002BvWndpTlNXL2HCQ28PXaIuVEB2Dmsp8DiZqyN35FAFiw19IJpPcbmrq0wCq7\u002BvHd5Y\u002B2rMy5y3OcBXmqtccq9rB/uUFKI/GzfZRPhRdBhEQIRgKUlxSAoAm0uqtWNB5Yu\u002Bier5\u002BWOoWbnxAwAwQzDao3lLIobX5ePxemiImroCIzFm\u002BztT7/CPLzi8ej\u002BVxdeyu1nJjgMR3FwDl0fD4dJRHozuWACStjM/TGDlZ50tNqHuxejo\u002B\u002BZPL8wwqCvxUFPhZFfBSbIBMJti0wJjpDpJRQXfjzr6uj9u\u002BtYysCWijA4OPqzeXpVLJtE010zS9cZDM1DTa9ASLmoaOnh4cEYaySsoa30T5Mp5kPD7Ni\u002B5Rtt7qofzqO553jqQHmHExi5p8RcRNsb6y7VWtnm1ecjUdcdM7QClwhQPl8zi3o\u002BiXdREMMwvbtvv0KYfmRJSBtvlVY93O6ujLlc8WdsYcdE1RmutlV3kO20tzcXFRohBFerQ/ccE6c11EJB53xIk7EndmNSnObxIRsSwrMucWUvh2AxiGiWmYGOassjB/0yxzzPzvOWfyAyvlXYiiBFoWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-03-27T18:16:36.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\index.js",
+              "RelativeDocumentMoniker": "src\\index.js",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\index.js",
+              "RelativeToolTip": "src\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-27T18:16:32.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\index.css",
+              "RelativeDocumentMoniker": "src\\index.css",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\index.css",
+              "RelativeToolTip": "src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-27T18:16:31.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "App.test.js",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\App.test.js",
+              "RelativeDocumentMoniker": "src\\App.test.js",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\App.test.js",
+              "RelativeToolTip": "src\\App.test.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-27T18:16:25.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-27T18:16:24.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-27T18:16:21.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-27T18:16:16.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\patri\\OpenSourceFrontEnd\\Group5FrontEnd\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-03-27T18:16:09.717Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

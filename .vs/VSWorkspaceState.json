@@ -1,12 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\pages",
     "\\src\\pages\\admin",
     "\\src\\pages\\business",
-    "\\src\\pages\\components"
+    "\\src\\pages\\components",
+    "\\src\\services"
   ],
-  "SelectedNode": "\\src\\pages\\components\\Footer.tsx",
+  "SelectedNode": "\\src\\pages\\HomePage.tsx",
   "PreviewInSolutionExplorer": false
 }
