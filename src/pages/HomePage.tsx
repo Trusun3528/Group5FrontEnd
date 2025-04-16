@@ -21,23 +21,42 @@ function HomePage() {
 
     const isLoading = items.length === 0;
 
-    const handleSearch = async (searchWord: string, searchMode: "title" | "category") => {
-        const endpoint =
-            searchMode === "title"
-                ? `/api/Product/SearchProducts?searchWord=${encodeURIComponent(searchWord)}`
-                : `/api/Product/SearchProductsByCategory?categoryName=${encodeURIComponent(searchWord)}`;
+    const handleSearch = async (
+  searchWord: string,
+  searchMode: "title" | "category" | "price"
+) => {
+  let endpoint = "";
+  let fetchOptions: RequestInit = { method: "GET" };
 
-        try {
-            const response = await fetch(endpoint);
-            if (!response.ok) throw new Error(await response.text());
+  if (searchMode === "price") {
+    endpoint = "/api/Product/PriceRangeFilter";
+    const { minPrice, maxPrice } = JSON.parse(searchWord);
 
-            const data = await response.json();
-            setItems(data.$values || []);
-        } catch (error) {
-            console.error("Search error:", error);
-            alert("No results found or invalid response.");
-        }
+    fetchOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ minPrice, maxPrice }),
     };
+  } else {
+    endpoint =
+      searchMode === "title"
+        ? `/api/Product/SearchProducts?searchWord=${encodeURIComponent(searchWord)}`
+        : `/api/Product/SearchProductsByCategory?categoryName=${encodeURIComponent(searchWord)}`;
+  }
+
+  try {
+    const response = await fetch(endpoint, fetchOptions);
+    if (!response.ok) throw new Error(await response.text());
+
+    const data = await response.json();
+    setItems(data.$values || []);
+  } catch (error) {
+    console.error("Search error:", error);
+    alert("No results found or invalid response.");
+  }
+};
 
     const handleClear = async () => {
         try {
@@ -67,7 +86,7 @@ function HomePage() {
                 content={
                     isLoading ? null : (
                         <>
-                            <SearchBar onSearch={handleSearch} onClear={handleClear} />
+                            <SearchBar onSearch={handleSearch} onClear={handleClear} isLoading={isLoading} />
                             {!loggedIn && (
                                 <div className="bg-yellow-100 border border-yellow-200 p-4 rounded-xl mb-4">
                                     <p className="text-yellow-700">
