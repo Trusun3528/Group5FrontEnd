@@ -11,7 +11,7 @@ function CartItem(props: any) {
             </div>
             <div className="flex flex-row gap-2">
                 <Link to={`/details/${props.product.id}`} className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><EditIcon/></Link>
-                <button type="button" onClick={() => { props.removeItemCallback(props.id); }}
+                <button type="button" onClick={() => { props.removeItemCallback(props.product.id); }}
                     className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><DeleteIcon/></button>
             </div>
         </div>
