@@ -35,6 +35,10 @@ function Header({ onLogoClick }: HeaderProps) {
                         Admin Panel
                     </button>
                 )}
+                
+                <Link to="/cart">
+                    <ShoppingCartIcon className="text-black" />
+                </Link>
 
                 {loggedIn ? (
                     <div>
