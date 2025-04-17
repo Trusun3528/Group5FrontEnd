@@ -7,6 +7,8 @@ import CartPage from "./pages/CartPage";
 import ThankYouPage from "./pages/ThankYouPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import UserWishlistPage from "./pages/UserWishlistPage";
+import ProfilePage from "./pages/ProfilePage";
 // Admin Pages
 import AdminPurchasesPage from "./pages/admin/AdminPurchasesPage";
 import AdminPanel from "./pages/admin/AdminPanel";
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="details/:id" element={<ItemDetailsPage />} />
         <Route path="cart" element={<CartPage />} />
         <Route path="thank-you" element={<ThankYouPage />} />
+        <Route path="wishlist" element={<UserWishlistPage />} />
+        <Route path="profile" element={<ProfilePage />} />
         
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="admin/purchases" element={<AdminPurchasesPage />} />
