@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
 import MenuIcon from "@mui/icons-material/Menu";
 import StoreIcon from "@mui/icons-material/Store";
@@ -47,11 +48,11 @@ function Header({ onLogoClick }: HeaderProps) {
                                            right-0 rounded-md shadow-md border border-gray-300"
                                 role="menu"
                             >
-                                <Link to="/cart">
-                                    <ShoppingCartIcon /> View cart (0)
+                                <Link to="/profile">
+                                    <PersonIcon /> Profile
                                 </Link>
-                                <Link to="/admin/purchases">
-                                    <StoreIcon /> View purchases (admin)
+                                <Link to="/cart">
+                                    <ShoppingCartIcon /> View cart
                                 </Link>
                                 <Link
                                     to="/"
