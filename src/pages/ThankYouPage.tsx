@@ -49,10 +49,10 @@ export default function ThankYouPage() {
                     {isLoading ? (
                         <p>Loading cart...</p>
                     ) : (
-                        cart.items.map((item: CartItem) => (
+                        cart.items.map((item: any) => (
                             <div className="flex justify-between items-center p-4 border rounded-lg shadow-sm bg-gray-100" key={item.id}>
                                 <div>
-                                    <span className="block text-sm text-gray-600">Name: {item.product.name}</span>
+                                    <span className="block text-sm text-gray-600">Name: {item.product.productName}</span>
                                     <span className="block text-sm text-gray-600">Quantity: {item.quantity}</span>
                                 </div>
                                 <div className="text-right">
@@ -68,12 +68,6 @@ export default function ThankYouPage() {
                         Total: ${cart.total.toFixed(2)}
                     </div>
                 )}
-                <div className="mt-4">
-                    <h2 className="text-xl font-bold mb-4">Order Details</h2>
-                    <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
-                        <pre>{JSON.stringify(order, null, 2)}</pre>
-                    </div>
-                </div>
             </div>
         </div>
     );
