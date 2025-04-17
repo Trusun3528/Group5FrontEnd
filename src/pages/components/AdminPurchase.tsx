@@ -10,9 +10,6 @@ function AdminPurchase() {
                 <p>$19.99</p>
                 <p>Jan 1, 2025, 3:00 PM</p>
             </div>
-            <div className="flex flex-row gap-2">
-                <Link to="/" className="text-white bg-black rounded-full w-[48px] h-[48px] flex items-center justify-center"><DeleteIcon/></Link>
-            </div>
         </div>
     )
 }
