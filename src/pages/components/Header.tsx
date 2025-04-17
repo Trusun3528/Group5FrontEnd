@@ -55,9 +55,6 @@ function Header({ onLogoClick }: HeaderProps) {
                                 <Link to="/profile">
                                     <PersonIcon /> Profile
                                 </Link>
-                                <Link to="/cart">
-                                    <ShoppingCartIcon /> View cart
-                                </Link>
                                 <Link
                                     to="/"
                                     onClick={() => {
