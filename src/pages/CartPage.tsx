@@ -4,8 +4,22 @@ import PageContainer from "./components/PageContainer";
 import { getAuthHeaders, isLoggedIn } from "../auth";
 import CartItem from "./components/CartItem";
 
+interface CartItem {
+    id: number;
+    quantity: number;
+    product: {
+        name: string;
+        price: number;
+    };
+}
+
+interface CartData {
+    items: CartItem[];
+    total: number;
+}
+
 function CartPage() {
-    const [cart, setCart] = useState<any>(null);
+    const [cart, setCart] = useState<CartItem[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [isCheckingOut, setIsCheckingOut] = useState<boolean>(false);
     const [totalPrice, setTotalPrice] = useState<number>(0);
@@ -22,10 +36,10 @@ function CartPage() {
             if (!cartRes.ok) throw new Error("Failed to fetch cart");
 
             const cartData = await cartRes.json();
-            setCart(cartData);
+            setCart(cartData.$values);
 
             const calculatedTotal = cartData.$values.reduce(
-                (acc: number, item: any) => acc + item.product.price * item.quantity,
+                (acc: number, item: CartItem) => acc + item.product.price * item.quantity,
                 0
             );
             setTotalPrice(calculatedTotal);
@@ -39,6 +53,13 @@ function CartPage() {
     useEffect(() => {
         fetchUserCart();
     }, []);
+
+    const applyDiscount = () => {
+        if (!discountApplied) {
+            setTotalPrice(prev => prev * 0.9);
+            setDiscountApplied(true);
+        }
+    };
 
     const handleCheckout = async () => {
         setIsCheckingOut(true);
@@ -60,7 +81,7 @@ function CartPage() {
                 throw new Error(body?.message || "Checkout failed");
             }
 
-            navigate("/thank-you", { state: { order: body } });
+            navigate("/thank-you", { state: { order: body, cartData: { items: cart ?? [], total: totalPrice } } });
         } catch (err) {
             console.error("Checkout error:", err);
             const message = err instanceof Error ? err.message : "Checkout failed. Please try again.";
@@ -81,13 +102,6 @@ function CartPage() {
         fetchUserCart();
     };
 
-    const applyDiscount = () => {
-        if (!discountApplied) {
-            setTotalPrice(prev => prev * 0.9);
-            setDiscountApplied(true);
-        }
-    };
-
     return (
         <PageContainer
             isLoading={isLoading}
@@ -96,10 +110,10 @@ function CartPage() {
                     <div>Loading...</div>
                 ) : (
                     <div>
-                        {cart.$values.length === 0 ? (
+                        {cart && cart.length === 0 ? (
                             "Cart is empty."
                         ) : (
-                            cart.$values.map((cartItem: any) => (
+                            cart?.map((cartItem: CartItem) => (
                                 <CartItem
                                     key={cartItem.id}
                                     id={cartItem.id}
@@ -114,8 +128,7 @@ function CartPage() {
                             {loggedIn && (
                                 <div className="bg-blue-100 p-4 rounded-xl mt-4">
                                     <button
-                                            className="ml-2 p-2 bg-blue-600 text-white rounded"
-                                        //before you press it will say applyDiscount
+                                        className="ml-2 p-2 bg-blue-600 text-white rounded"
                                         onClick={applyDiscount}
                                         disabled={discountApplied}
                                     >
@@ -127,10 +140,7 @@ function CartPage() {
                             )}
 
                             <button
-                                className={`ml-2 p-2 rounded mt-4 ${isCheckingOut
-                                    ? "bg-gray-400 cursor-not-allowed"
-                                    : "bg-green-600 hover:bg-green-700"
-                                    } text-white`}
+                                className={`ml-2 p-2 rounded mt-4 ${isCheckingOut ? "bg-gray-400 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"} text-white`}
                                 onClick={handleCheckout}
                                 disabled={isCheckingOut}
                             >
