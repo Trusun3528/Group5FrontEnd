@@ -49,6 +49,30 @@ function ItemDetailsPage() {
     }
 };
 
+const handleAddToWishlist = async () => {
+    if (!item) return;
+
+    try {
+        setIsLoading(true);
+
+        const response = await fetch(`/api/WishList/AddToWishlist?productId=${id}` , {
+            method: "POST",
+            headers: getAuthHeaders(),
+        });
+
+        if (!response.ok) {
+            setIsLoading(false);
+            throw new Error("Failed to add to wishlist.");
+        }
+
+        setIsLoading(false);
+        alert("Item added to wishlist!");
+    } catch (error) {
+        console.error("Error adding to wishlist:", error);
+        alert("Failed to add item to wishlist.");
+    }
+};
+
     return (
         <PageContainer
             isLoading={isLoading}
@@ -89,6 +113,12 @@ function ItemDetailsPage() {
                                     <ShoppingCartIcon />
                                 </button>
                             </form>
+                            <button
+                                onClick={handleAddToWishlist}
+                                className="mt-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                                >
+                                Add to Wishlist
+                            </button>
                         </div>
                     </div>
                 </>
